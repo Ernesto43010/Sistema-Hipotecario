@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+
+<Sistema_Hipotecario>
+    <Clientes>
+
+        <Cliente Id_Cliente = "1">
+            <Nombre>Luis Ernesto</Nombre>
+            <Apellido_Paterno>Luna</Apellido_Paterno>
+            <Apellido_Materno>Ruiz</Apellido_Materno>
+            <Edad>20</Edad>
+            <Direccion>
+                <Calle>Margarita</Calle>
+                <Numero_Exterior>42</Numero_Exterior>
+                <Numero_Interior>NULL</Numero_Interior>
+                <Colonia>El palmar</Colonia>
+                <Codigo_Postal>57310</Codigo_Postal>
+            </Direccion>
+            <Salario>50000</Salario>
+            <TOTAl_A_PAGAR>NULL</TOTAl_A_PAGAR>
+        </Cliente>
+
+        <Cliente  Id_Cliente = "2">
+            <Nombre>Monica</Nombre>
+            <Apellido_Paterno>Gonzalez</Apellido_Paterno>
+            <Apellido_Materno>Chacon</Apellido_Materno>
+            <Edad>20</Edad>
+            <Direccion>
+                <Calle>Cafetal</Calle>
+                <Numero_Exterior>219</Numero_Exterior>
+                <Numero_Interior>NULL</Numero_Interior>
+                <Colonia>Esperanza</Colonia>
+                <Codigo_Postal>57800</Codigo_Postal>
+            </Direccion>
+            <Salario>45500</Salario>
+            <TOTAl_A_PAGAR>NULL</TOTAl_A_PAGAR>
+        </Cliente>
+
+        <Cliente  Id_Cliente = "3">
+            <Nombre>Esmeralda Leticia</Nombre>
+            <Apellido_Paterno>Lopez</Apellido_Paterno>
+            <Apellido_Materno>Salazar</Apellido_Materno>
+            <Direccion>
+                <Calle>Tulipanes</Calle>
+                <Numero_Exterior>4</Numero_Exterior>
+                <Numero_Interior>NULL</Numero_Interior>
+                <Colonia>San Sebastian</Colonia>
+                <Codigo_Postal>56346</Codigo_Postal>
+            </Direccion>
+            <Salario>100000</Salario>
+            <TOTAl_A_PAGAR>NULL</TOTAl_A_PAGAR>
+        </Cliente>
+
+        <Cliente Id_Cliente = "4">
+            <Nombre>Martha</Nombre>
+            <Apellido_Paterno>Lopez</Apellido_Paterno>
+            <Apellido_Materno>Perez</Apellido_Materno>
+            <Edad>36</Edad>
+            <Direccion>
+                <Calle>Independecia</Calle>
+                <Numero_Exterior>176</Numero_Exterior>
+                <Numero_Interior>NULL</Numero_Interior>
+                <Colonia>Las flsores</Colonia>
+                <Codigo_Postal>63728</Codigo_Postal>
+            </Direccion>
+            <Salario>35000</Salario>
+            <TOTAl_A_PAGAR>NULL</TOTAl_A_PAGAR>
+        </Cliente>
+
+    </Clientes>
+
+    <Empleados>
+
+        <Empleado Id_Empleado = "1">
+            <Nombre>Luis Fernando</Nombre>
+            <Apelldo_Paterno>Luna</Apelldo_Paterno>
+            <Apellido_Materno>Gallegos</Apellido_Materno>
+            <Edad>44</Edad>
+            <Salario>20000</Salario>
+        </Empleado>
+
+        <Empleado Id_Empleado = "2">
+            <Nombre>Angel Eduardo</Nombre>
+            <Apellido_Paterno>Camacho</Apellido_Paterno>
+            <Apellido_Materno>Cisneros</Apellido_Materno>
+            <Edad>20</Edad>
+            <Salario>18000</Salario>
+        </Empleado>
+
+        <Empleado Id_Empleado = "3">
+            <Nombre>Jose</Nombre>
+            <Apellido_Paterno>Martinez</Apellido_Paterno>
+            <Apellido_Materno>Perez</Apellido_Materno>
+            <Edad>28</Edad>
+            <Salario>19000</Salario>
+        </Empleado>
+
+        <Empleado Id_Empleado = "4">
+            <Nombre>Alejandro</Nombre>
+            <Apellido_Paterno>Botello</Apellido_Paterno>
+            <Apellido_Materno>Castillo</Apellido_Materno>
+            <Edad>32</Edad>
+            <Salario>25000</Salario>
+        </Empleado>
+
+    </Empleados>
+
+    <Propiedades>
+
+        <Propiedad Id_Propiedad = "1">
+
+            <Precio>500000</Precio>
+            <Direccion>
+                <Calle>6</Calle>
+                <Numero_Exterior>63</Numero_Exterior>
+                <Numero_Interior>NULL</Numero_Interior>
+                <Colonia>Agua Azul</Colonia>
+                <Codigo_Postal>68945</Codigo_Postal>
+            </Direccion>
+        </Propiedad>
+
+        <Propiedad Id_Propiedad="2">
+            <Precio>750000</Precio>
+            <Direccion>
+                <Calle>12</Calle>
+                <Numero_Exterior>45</Numero_Exterior>
+                <Numero_Interior>3</Numero_Interior>
+                <Colonia>Los Pinos</Colonia>
+                <Codigo_Postal>72134</Codigo_Postal>
+            </Direccion>
+        </Propiedad>
+
+        <Propiedad Id_Propiedad="3">
+            <Precio>600000</Precio>
+            <Direccion>
+                <Calle>3</Calle>
+                <Numero_Exterior>21</Numero_Exterior>
+                <Numero_Interior>7</Numero_Interior>
+                <Colonia>San Juan</Colonia>
+                <Codigo_Postal>78501</Codigo_Postal>
+            </Direccion>
+        </Propiedad>
+        
+        <Propiedad Id_Propiedad="4">
+            <Precio>850000</Precio>
+            <Direccion>
+                <Calle>8</Calle>
+                <Numero_Exterior>72</Numero_Exterior>
+                <Numero_Interior>NULL</Numero_Interior>
+                <Colonia>Las Flores</Colonia>
+                <Codigo_Postal>64321</Codigo_Postal>
+            </Direccion>
+        </Propiedad>
+
+        <Propiedad Id_Propiedad="5">
+            <Precio>450000</Precio>
+            <Direccion>
+                <Calle>5</Calle>
+                <Numero_Exterior>14</Numero_Exterior>
+                <Numero_Interior>2</Numero_Interior>
+                <Colonia>El Bosque</Colonia>
+                <Codigo_Postal>70123</Codigo_Postal>
+            </Direccion>
+        </Propiedad>
+
+        <Propiedad Id_Propiedad="6">
+            <Precio>950000</Precio>
+            <Direccion>
+                <Calle>10</Calle>
+                <Numero_Exterior>30</Numero_Exterior>
+                <Numero_Interior>1</Numero_Interior>
+                <Colonia>Centro Histórico</Colonia>
+                <Codigo_Postal>60201</Codigo_Postal>
+            </Direccion>
+        </Propiedad>        
+
+    </Propiedades>
+
+    <Creditos>
+
+        <Credito Id_Credito = "1" Id_Empleado = "3" Id_Cliente = "2">
+<!-- Esto va ir en el xsd
+
+<xs:element name="Credito">
+        <xs:complexType>
+            <xs:attribute name="Id_Credito" type="xs:integer" use="required"/>
+            <xs:attribute name="Id_Empleado" type="xs:integer" use="required"/>
+            <xs:attribute name="Id_Cliente" type="xs:integer" use="required"/>
+            <xs:attribute name="Estado">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Al corriente"/>
+                        <xs:enumeration value="Atrasado"/>
+                        <xs:enumeration value="Pagado"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+</xs:schema> -->
+            <Estado_Del_Credito>Al corriente</Estado_Del_Credito>
+            <Dinero_prestado>600000</Dinero_prestado>
+            <Propiedad>5</Propiedad>
+            <!-- ENCONTRAR LA FORMULA PARA LOS PAGOS MENSUALES-->
+            <!-- ENCONTRAR LA FORMULA PARA EL PLAZO EN MESES-->
+            <!-- ENCONTRAR LA FORMULA PARA EL INTERES ANUAL-->
+            <Pagos_Mensuales>NULL</Pagos_Mensuales>
+            <Plazo_En_Meses>NULL</Plazo_En_Meses>
+            <Interes_Anual>NULL</Interes_Anual>
+<!-- Esto va ir en el xsd para aceptar un tipo de dato fecha
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Fecha_Inicio" type="FechaTipo"/>
+    <xs:simpleType name="FechaTipo">
+        <xs:restriction base="xs:date"/>
+    </xs:simpleType>
+</xs:schema> -->
+            <Fecha_Inicio>2023-10-31</Fecha_Inicio>
+            <Fecha_Aproximada_Pago_Final>2030-10-31</Fecha_Aproximada_Pago_Final>
+        </Credito>
+
+        <Credito Id_Credito = "2" Id_Empleado = "1" Id_Cliente = "3">
+            <Estado_Del_Credito>Al corriente</Estado_Del_Credito>
+            <Dinero_prestado>1000000</Dinero_prestado>
+            <Propiedad>6</Propiedad>
+            <!-- ENCONTRAR LA FORMULA PARA LOS PAGOS MENSUALES-->
+            <!-- ENCONTRAR LA FORMULA PARA EL PLAZO EN MESES-->
+            <!-- ENCONTRAR LA FORMULA PARA EL INTERES ANUAL-->
+            <Pagos_Mensuales>NULL</Pagos_Mensuales>
+            <Plazo_En_Meses>NULL</Plazo_En_Meses>
+            <Interes_Anual>NULL</Interes_Anual>
+            <Fecha_Inicio>2023-04-22</Fecha_Inicio>
+            <Fecha_Aproximada_Pago_Final>2029-04-22</Fecha_Aproximada_Pago_Final>
+        </Credito>
+
+    </Creditos>
+
+    <Pagos>
+
+        <Pago Id_Cliente = "2" Id_Credito = "1">
+            <!-- INVESTIGAR COMO CALCULAR HACER EL PAGO REQUERIDO
+            Y COMO VALIDAR QUE EL ABONO SE MAYOR O IGUAL AL PAGO REQUERIDO-->
+            <Pago_Requerido>NULL</Pago_Requerido>
+            <Abono>NULL</Abono>
+            <!-- HACER LA FUNCION PARA QUE CUANDO EN RESTANTE APAREZCA 0 EL ESTADO 
+            DEL CREDITO SE ACTUALICE A PAGADO-->
+            <Restante>NULL</Restante>
+        </Pago>
+
+        <Pago Id_Cliente = "3" Id_Credito = "2">
+            <Pago_Requerido>NULL</Pago_Requerido>
+            <Abono>NULL</Abono>
+            <Restante>NULL</Restante>
+        </Pago>
+    </Pagos>
+    
+</Sistema_Hipotecario>
+
+
+<!-- Hay que agregar el XSD-->
