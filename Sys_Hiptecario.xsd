@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:escom="http://www.example.org"
+            targetNamespace="http://www.example.org" elementFormDefault="qualified">
+
+<xsd:element name="Sistema_Hipotecario">
+    <xsd:complexType>
+        <xsd:sequence>
+            <xsd:element name = "Clientes">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name = "Cliente" maxOccurs="unbounded">
+                            <xsd:complexType>
+                                <xsd:sequence>
+                                    <xsd:element name = "Nombre" type="xsd:string"/>
+                                    <xsd:element name = "Apellido_Paterno" type="xsd:string"/>
+                                    <xsd:element name = "Apellido_Materno" type="xsd:string"/>
+                                    <xsd:element name = "Edad" type= "xsd:positiveInteger" />
+                                    <xsd:element name ="Direccion">
+                                        <xsd:complexType>
+                                            <xsd:sequence>
+                                                <xsd:element name = "Calle" type="xsd:string" />
+                                                <xsd:element name = "Numero_Exterior" type = "xsd:positiveInteger"/>
+                                                <xsd:element name = "Numero_Interior" type = "xsd:positiveInteger"/>
+                                                <xsd:element name = "Colonia" type = "xsd:string" />
+                                                <xsd:element name = "Codigo_Postal" type = "xsd:string" />
+                                            </xsd:sequence>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                </xsd:sequence>
+                                <xsd:attribute name = "Id_Cliente" type="xsd:positiveInteger"/>
+                            </xsd:complexType>
+                        </xsd:element>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element name = "Empleados">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name = "Empleado" maxOccurs="unbounded">
+                            <xsd:complexType>
+                                <xsd:sequence>
+                                    <xsd:element name = "Nombre" type= "xsd:string"/>
+                                    <xsd:element name = "Apellido_Paterno" type= "xsd:string"/>
+                                    <xsd:element name = "Apellido_Materno" type= "xsd:string"/>
+                                    <xsd:element name = "Edad" type= "xsd:positiveInteger" />
+                                    <xsd:element name = "Salario" type = "xsd:positiveInteger" />
+                                </xsd:sequence>
+                            </xsd:complexType>
+                        </xsd:element>
+                    </xsd:sequence>
+                    <xsd:attribute name="Id_Empleado" type="xsd:positiveInteger" />
+                </xsd:complexType>
+            </xsd:element>
+
+            
+        </xsd:sequence>
+    </xsd:complexType>
+
+
+
+</xsd:element>
+</xsd:schema>
