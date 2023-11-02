@@ -27,11 +27,13 @@
                                             </xsd:sequence>
                                         </xsd:complexType>
                                     </xsd:element>
+                                    <xsd:element name = "Salario" type = "xsd:positiveInteger" />
+                                    <xsd:element name = "TOTAL_A_PAGAR" type = "xsd:positiveInteger" />
                                 </xsd:sequence>
-                                <xsd:attribute name = "Id_Cliente" type="xsd:positiveInteger"/>
                             </xsd:complexType>
                         </xsd:element>
                     </xsd:sequence>
+                    <xsd:attribute name = "Id_Cliente" type="xsd:positiveInteger" use="required"/>
                 </xsd:complexType>
             </xsd:element>
 
@@ -50,11 +52,85 @@
                             </xsd:complexType>
                         </xsd:element>
                     </xsd:sequence>
-                    <xsd:attribute name="Id_Empleado" type="xsd:positiveInteger" />
+                    <xsd:attribute name="Id_Empleado" type="xsd:positiveInteger" use="required"/>
                 </xsd:complexType>
             </xsd:element>
 
-            
+            <xsd:element name = "Propiedades">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name = "Propiedad" maxOccurs="unbounded">
+                            <xsd:complexType>
+                                <xsd:sequence>
+                                    <xsd:element name = "Precio" type= "xsd:positiveInteger" />
+                                    <xsd:element name ="Direccion">
+                                        <xsd:complexType>
+                                            <xsd:sequence>
+                                                <xsd:element name = "Calle" type="xsd:string" />
+                                                <xsd:element name = "Numero_Exterior" type = "xsd:positiveInteger"/>
+                                                <xsd:element name = "Numero_Interior" type = "xsd:positiveInteger"/>
+                                                <xsd:element name = "Colonia" type = "xsd:string" />
+                                                <xsd:element name = "Codigo_Postal" type = "xsd:string" />
+                                            </xsd:sequence>
+                                        </xsd:complexType>
+                                    </xsd:element>
+                                </xsd:sequence>
+                            </xsd:complexType>
+                        </xsd:element>
+                    </xsd:sequence>
+                    <xsd:attribute name = "Id_Propiedad" type = "xsd:positiveInteger" use="required"/>
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element name = "Creditos">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name = "Credito">
+                            <xsd:complexType>
+                                <xsd:sequence>
+                                    <xsd:element name = "Estado_del_Credito">
+                                        <xsd:simpleType>
+                                            <xsd:restriction base="xsd:string">
+                                                <xsd:enumeration value="Al corriente" />
+                                                <xsd:enumeration value="Atrasado" />
+                                                <xsd:enumeration value="Pagado" />
+                                            </xsd:restriction>
+                                        </xsd:simpleType>
+                                    </xsd:element>
+                                <xsd:element name = "Dinero_Prestado" type = "xsd:positiveInteger" />
+                                <xsd:element name = "Propiedad" type = "xsd:positiveInteger" />
+                                <xsd:element name = "Pagos_Mensuales" type = "xsd:positiveInteger" />
+                                <xsd:element name = "Plazo_en_Meses" type = "xsd:positiveInteger" />
+                                <xsd:element name = "Interes_Anual" type = "xsd:positiveInteger" />
+                                <xsd:element name = "Fecha_Incio" type = "xsd:date" />
+                                <xsd:element name = "Fecha_Aproximada_Pago_Final" type = "xsd:date" />
+                                </xsd:sequence>
+                            </xsd:complexType>
+                        </xsd:element>
+                    </xsd:sequence>
+                    <xsd:attribute name = "Id_Credito" type = "xsd:positiveInteger" use="required" />
+                    <xsd:attribute name = "Id_Empleado" type = "xsd:positiveInteger" use="required" />
+                    <xsd:attribute name = "Id_Cliente" type = "xsd:positiveInteger" use="required" />
+                </xsd:complexType>
+            </xsd:element>
+
+            <xsd:element name = "Pagos">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name = "Pago">
+                            <xsd:complexType>
+                                <xsd:sequence>
+                                    <xsd:element name = "Pago_Requerido" type = "xsd:positiveInteger" />
+                                    <xsd:element name = "Abono" type = "xsd:positiveInteger" />
+                                    <xsd:element name = "Restante" type = "xsd:positiveInteger" />
+                                </xsd:sequence>
+                            </xsd:complexType>
+                        </xsd:element>
+                    </xsd:sequence>
+                    <xsd:attribute name = "Id_Cliente" type = "xsd:positiveInteger" use="required" />
+                    <xsd:attribute name = "Id_Credito" type = "xsd:positiveInteger" use="required" />
+                </xsd:complexType>
+            </xsd:element>
         </xsd:sequence>
     </xsd:complexType>
 
