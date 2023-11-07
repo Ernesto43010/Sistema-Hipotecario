@@ -3,7 +3,7 @@
 <Sistema_Hipotecario>
     <Clientes>
 
-        <Cliente Id_Cliente = "1">
+        <Cliente Id_Cliente="1">
             <Nombre>Luis Ernesto</Nombre>
             <Apellido_Paterno>Luna</Apellido_Paterno>
             <Apellido_Materno>Ruiz</Apellido_Materno>
@@ -16,10 +16,10 @@
                 <Codigo_Postal>57310</Codigo_Postal>
             </Direccion>
             <Salario>50000</Salario>
-            <TOTAl_A_PAGAR>NULL</TOTAl_A_PAGAR>
+            <Total_A_Pagar>0.0</Total_A_Pagar>
         </Cliente>
 
-        <Cliente  Id_Cliente = "2">
+        <Cliente Id_Cliente="2">
             <Nombre>Monica</Nombre>
             <Apellido_Paterno>Gonzalez</Apellido_Paterno>
             <Apellido_Materno>Chacon</Apellido_Materno>
@@ -32,10 +32,10 @@
                 <Codigo_Postal>57800</Codigo_Postal>
             </Direccion>
             <Salario>45500</Salario>
-            <TOTAl_A_PAGAR>0</TOTAl_A_PAGAR>
+            <Total_A_Pagar>0.0</Total_A_Pagar>
         </Cliente>
 
-        <Cliente  Id_Cliente = "3">
+        <Cliente Id_Cliente="3">
             <Nombre>Esmeralda Leticia</Nombre>
             <Apellido_Paterno>Lopez</Apellido_Paterno>
             <Apellido_Materno>Salazar</Apellido_Materno>
@@ -47,38 +47,38 @@
                 <Codigo_Postal>56346</Codigo_Postal>
             </Direccion>
             <Salario>100000</Salario>
-            <TOTAl_A_PAGAR>0</TOTAl_A_PAGAR>
+            <Total_A_Pagar>0.0</Total_A_Pagar>
         </Cliente>
 
-        <Cliente Id_Cliente = "4">
+        <Cliente Id_Cliente="4">
             <Nombre>Martha</Nombre>
             <Apellido_Paterno>Lopez</Apellido_Paterno>
             <Apellido_Materno>Perez</Apellido_Materno>
             <Edad>36</Edad>
             <Direccion>
-                <Calle>Independecia</Calle>
+                <Calle>Independencia</Calle>
                 <Numero_Exterior>176</Numero_Exterior>
                 <Numero_Interior>0</Numero_Interior>
-                <Colonia>Las flsores</Colonia>
+                <Colonia>Las Flores</Colonia>
                 <Codigo_Postal>63728</Codigo_Postal>
             </Direccion>
             <Salario>35000</Salario>
-            <TOTAl_A_PAGAR>0</TOTAl_A_PAGAR>
+            <Total_A_Pagar>0.0</Total_A_Pagar>
         </Cliente>
 
     </Clientes>
 
     <Empleados>
 
-        <Empleado Id_Empleado = "1">
+        <Empleado Id_Empleado="1">
             <Nombre>Luis Fernando</Nombre>
-            <Apelldo_Paterno>Luna</Apelldo_Paterno>
+            <Apellido_Paterno>Luna</Apellido_Paterno>
             <Apellido_Materno>Gallegos</Apellido_Materno>
             <Edad>44</Edad>
             <Salario>20000</Salario>
         </Empleado>
 
-        <Empleado Id_Empleado = "2">
+        <Empleado Id_Empleado="2">
             <Nombre>Angel Eduardo</Nombre>
             <Apellido_Paterno>Camacho</Apellido_Paterno>
             <Apellido_Materno>Cisneros</Apellido_Materno>
@@ -86,7 +86,7 @@
             <Salario>18000</Salario>
         </Empleado>
 
-        <Empleado Id_Empleado = "3">
+        <Empleado Id_Empleado="3">
             <Nombre>Jose</Nombre>
             <Apellido_Paterno>Martinez</Apellido_Paterno>
             <Apellido_Materno>Perez</Apellido_Materno>
@@ -94,7 +94,7 @@
             <Salario>19000</Salario>
         </Empleado>
 
-        <Empleado Id_Empleado = "4">
+        <Empleado Id_Empleado="4">
             <Nombre>Alejandro</Nombre>
             <Apellido_Paterno>Botello</Apellido_Paterno>
             <Apellido_Materno>Castillo</Apellido_Materno>
@@ -106,8 +106,7 @@
 
     <Propiedades>
 
-        <Propiedad Id_Propiedad = "1">
-
+        <Propiedad Id_Propiedad="1">
             <Precio>500000</Precio>
             <Direccion>
                 <Calle>6</Calle>
@@ -145,7 +144,7 @@
             <Direccion>
                 <Calle>8</Calle>
                 <Numero_Exterior>72</Numero_Exterior>
-                <Numero_Interior>NULL</Numero_Interior>
+                <Numero_Interior>0</Numero_Interior>
                 <Colonia>Las Flores</Colonia>
                 <Codigo_Postal>64321</Codigo_Postal>
             </Direccion>
@@ -177,26 +176,24 @@
 
     <Creditos>
 
-        <Credito Id_Credito = "1" Id_Empleado = "3" Id_Cliente = "2">
-
+        <Credito Id_Credito="1" Id_Empleado="3" Id_Cliente="2">
             <Estado_Del_Credito>Al corriente</Estado_Del_Credito>
-            <Dinero_prestado>600000</Dinero_prestado>
+            <Dinero_Prestado>600000</Dinero_Prestado>
             <Propiedad>5</Propiedad>
-            <Pagos_Mensuales>0</Pagos_Mensuales>
-            <Plazo_En_Meses>0</Plazo_En_Meses>
-            <Interes_Anual>0</Interes_Anual>
-
+            <Pagos_Mensuales>0.0</Pagos_Mensuales>
+            <Plazo_en_Meses>0</Plazo_en_Meses>
+            <Interes_Anual>0.0</Interes_Anual>
             <Fecha_Inicio>2023-10-31</Fecha_Inicio>
             <Fecha_Aproximada_Pago_Final>2030-10-31</Fecha_Aproximada_Pago_Final>
         </Credito>
 
-        <Credito Id_Credito = "2" Id_Empleado = "1" Id_Cliente = "3">
+        <Credito Id_Credito="2" Id_Empleado="1" Id_Cliente="3">
             <Estado_Del_Credito>Al corriente</Estado_Del_Credito>
-            <Dinero_prestado>1000000</Dinero_prestado>
+            <Dinero_Prestado>1000000</Dinero_Prestado>
             <Propiedad>6</Propiedad>
-            <Pagos_Mensuales>0</Pagos_Mensuales>
-            <Plazo_En_Meses>0</Plazo_En_Meses>
-            <Interes_Anual>0</Interes_Anual>
+            <Pagos_Mensuales>0.0</Pagos_Mensuales>
+            <Plazo_en_Meses>0</Plazo_en_Meses>
+            <Interes_Anual>0.0</Interes_Anual>
             <Fecha_Inicio>2023-04-22</Fecha_Inicio>
             <Fecha_Aproximada_Pago_Final>2029-04-22</Fecha_Aproximada_Pago_Final>
         </Credito>
@@ -205,17 +202,18 @@
 
     <Pagos>
 
-        <Pago Id_Cliente = "2" Id_Credito = "1">
-            <Pago_Requerido>0</Pago_Requerido>
-            <Abono>0</Abono>
-            <Restante>0</Restante>
+        <Pago Id_Cliente="2" Id_Credito="1">
+            <Pago_Requerido>0.0</Pago_Requerido>
+            <Abono>0.0</Abono>
+            <Restante>0.0</Restante>
         </Pago>
 
-        <Pago Id_Cliente = "3" Id_Credito = "2">
-            <Pago_Requerido>0</Pago_Requerido>
-            <Abono>0</Abono>
-            <Restante>0</Restante>
+        <Pago Id_Cliente="3" Id_Credito="2">
+            <Pago_Requerido>0.0</Pago_Requerido>
+            <Abono>0.0</Abono>
+            <Restante>0.0</Restante>
         </Pago>
+
     </Pagos>
     
 </Sistema_Hipotecario>
