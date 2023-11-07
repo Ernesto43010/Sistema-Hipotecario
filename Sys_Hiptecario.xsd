@@ -28,7 +28,7 @@
                                         </xsd:complexType>
                                     </xsd:element>
                                     <xsd:element name = "Salario" type = "xsd:positiveInteger" />
-                                    <xsd:element name = "TOTAL_A_PAGAR" type = "xsd:float" /> <!-- Lo vamos a poner flotante por que puede que tenga centavos-->
+                                    <xsd:element name = "Total_A_Pagar" type = "xsd:float" /> <!-- Lo vamos a poner flotante por que puede que tenga centavos-->
                                 </xsd:sequence>
                             </xsd:complexType>
                         </xsd:element>
@@ -88,7 +88,7 @@
                         <xsd:element name = "Credito">
                             <xsd:complexType>
                                 <xsd:sequence>
-                                    <xsd:element name = "Estado_del_Credito">
+                                    <xsd:element name = "Estado_Del_Credito">
                                         <xsd:simpleType>
                                             <xsd:restriction base="xsd:string">
                                                 <xsd:enumeration value="Al corriente" />
