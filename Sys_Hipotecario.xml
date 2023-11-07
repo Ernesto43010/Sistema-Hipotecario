@@ -11,7 +11,7 @@
             <Direccion>
                 <Calle>Margarita</Calle>
                 <Numero_Exterior>42</Numero_Exterior>
-                <Numero_Interior>NULL</Numero_Interior>
+                <Numero_Interior>0</Numero_Interior>
                 <Colonia>El palmar</Colonia>
                 <Codigo_Postal>57310</Codigo_Postal>
             </Direccion>
@@ -27,12 +27,12 @@
             <Direccion>
                 <Calle>Cafetal</Calle>
                 <Numero_Exterior>219</Numero_Exterior>
-                <Numero_Interior>NULL</Numero_Interior>
+                <Numero_Interior>0</Numero_Interior>
                 <Colonia>Esperanza</Colonia>
                 <Codigo_Postal>57800</Codigo_Postal>
             </Direccion>
             <Salario>45500</Salario>
-            <TOTAl_A_PAGAR>NULL</TOTAl_A_PAGAR>
+            <TOTAl_A_PAGAR>0</TOTAl_A_PAGAR>
         </Cliente>
 
         <Cliente  Id_Cliente = "3">
@@ -42,12 +42,12 @@
             <Direccion>
                 <Calle>Tulipanes</Calle>
                 <Numero_Exterior>4</Numero_Exterior>
-                <Numero_Interior>NULL</Numero_Interior>
+                <Numero_Interior>0</Numero_Interior>
                 <Colonia>San Sebastian</Colonia>
                 <Codigo_Postal>56346</Codigo_Postal>
             </Direccion>
             <Salario>100000</Salario>
-            <TOTAl_A_PAGAR>NULL</TOTAl_A_PAGAR>
+            <TOTAl_A_PAGAR>0</TOTAl_A_PAGAR>
         </Cliente>
 
         <Cliente Id_Cliente = "4">
@@ -58,12 +58,12 @@
             <Direccion>
                 <Calle>Independecia</Calle>
                 <Numero_Exterior>176</Numero_Exterior>
-                <Numero_Interior>NULL</Numero_Interior>
+                <Numero_Interior>0</Numero_Interior>
                 <Colonia>Las flsores</Colonia>
                 <Codigo_Postal>63728</Codigo_Postal>
             </Direccion>
             <Salario>35000</Salario>
-            <TOTAl_A_PAGAR>NULL</TOTAl_A_PAGAR>
+            <TOTAl_A_PAGAR>0</TOTAl_A_PAGAR>
         </Cliente>
 
     </Clientes>
@@ -112,7 +112,7 @@
             <Direccion>
                 <Calle>6</Calle>
                 <Numero_Exterior>63</Numero_Exterior>
-                <Numero_Interior>NULL</Numero_Interior>
+                <Numero_Interior>0</Numero_Interior>
                 <Colonia>Agua Azul</Colonia>
                 <Codigo_Postal>68945</Codigo_Postal>
             </Direccion>
@@ -178,41 +178,14 @@
     <Creditos>
 
         <Credito Id_Credito = "1" Id_Empleado = "3" Id_Cliente = "2">
-<!-- Esto va ir en el xsd
 
-<xs:element name="Credito">
-        <xs:complexType>
-            <xs:attribute name="Id_Credito" type="xs:integer" use="required"/>
-            <xs:attribute name="Id_Empleado" type="xs:integer" use="required"/>
-            <xs:attribute name="Id_Cliente" type="xs:integer" use="required"/>
-            <xs:attribute name="Estado">
-                <xs:simpleType>
-                    <xs:restriction base="xs:string">
-                        <xs:enumeration value="Al corriente"/>
-                        <xs:enumeration value="Atrasado"/>
-                        <xs:enumeration value="Pagado"/>
-                    </xs:restriction>
-                </xs:simpleType>
-            </xs:attribute>
-        </xs:complexType>
-    </xs:element>
-</xs:schema> -->
             <Estado_Del_Credito>Al corriente</Estado_Del_Credito>
             <Dinero_prestado>600000</Dinero_prestado>
             <Propiedad>5</Propiedad>
-            <!-- ENCONTRAR LA FORMULA PARA LOS PAGOS MENSUALES-->
-            <!-- ENCONTRAR LA FORMULA PARA EL PLAZO EN MESES-->
-            <!-- ENCONTRAR LA FORMULA PARA EL INTERES ANUAL-->
-            <Pagos_Mensuales>NULL</Pagos_Mensuales>
-            <Plazo_En_Meses>NULL</Plazo_En_Meses>
-            <Interes_Anual>NULL</Interes_Anual>
-<!-- Esto va ir en el xsd para aceptar un tipo de dato fecha
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <xs:element name="Fecha_Inicio" type="FechaTipo"/>
-    <xs:simpleType name="FechaTipo">
-        <xs:restriction base="xs:date"/>
-    </xs:simpleType>
-</xs:schema> -->
+            <Pagos_Mensuales>0</Pagos_Mensuales>
+            <Plazo_En_Meses>0</Plazo_En_Meses>
+            <Interes_Anual>0</Interes_Anual>
+
             <Fecha_Inicio>2023-10-31</Fecha_Inicio>
             <Fecha_Aproximada_Pago_Final>2030-10-31</Fecha_Aproximada_Pago_Final>
         </Credito>
@@ -221,12 +194,9 @@
             <Estado_Del_Credito>Al corriente</Estado_Del_Credito>
             <Dinero_prestado>1000000</Dinero_prestado>
             <Propiedad>6</Propiedad>
-            <!-- ENCONTRAR LA FORMULA PARA LOS PAGOS MENSUALES-->
-            <!-- ENCONTRAR LA FORMULA PARA EL PLAZO EN MESES-->
-            <!-- ENCONTRAR LA FORMULA PARA EL INTERES ANUAL-->
-            <Pagos_Mensuales>NULL</Pagos_Mensuales>
-            <Plazo_En_Meses>NULL</Plazo_En_Meses>
-            <Interes_Anual>NULL</Interes_Anual>
+            <Pagos_Mensuales>0</Pagos_Mensuales>
+            <Plazo_En_Meses>0</Plazo_En_Meses>
+            <Interes_Anual>0</Interes_Anual>
             <Fecha_Inicio>2023-04-22</Fecha_Inicio>
             <Fecha_Aproximada_Pago_Final>2029-04-22</Fecha_Aproximada_Pago_Final>
         </Credito>
@@ -236,23 +206,16 @@
     <Pagos>
 
         <Pago Id_Cliente = "2" Id_Credito = "1">
-            <!-- INVESTIGAR COMO CALCULAR HACER EL PAGO REQUERIDO
-            Y COMO VALIDAR QUE EL ABONO SE MAYOR O IGUAL AL PAGO REQUERIDO-->
-            <Pago_Requerido>NULL</Pago_Requerido>
-            <Abono>NULL</Abono>
-            <!-- HACER LA FUNCION PARA QUE CUANDO EN RESTANTE APAREZCA 0 EL ESTADO 
-            DEL CREDITO SE ACTUALICE A PAGADO-->
-            <Restante>NULL</Restante>
+            <Pago_Requerido>0</Pago_Requerido>
+            <Abono>0</Abono>
+            <Restante>0</Restante>
         </Pago>
 
         <Pago Id_Cliente = "3" Id_Credito = "2">
-            <Pago_Requerido>NULL</Pago_Requerido>
-            <Abono>NULL</Abono>
-            <Restante>NULL</Restante>
+            <Pago_Requerido>0</Pago_Requerido>
+            <Abono>0</Abono>
+            <Restante>0</Restante>
         </Pago>
     </Pagos>
     
 </Sistema_Hipotecario>
-
-
-<!-- Hay que agregar el XSD-->
