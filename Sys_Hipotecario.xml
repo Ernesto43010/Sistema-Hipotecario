@@ -204,12 +204,14 @@
 
         <Pago Id_Cliente="2" Id_Credito="1">
             <Pago_Requerido>0.0</Pago_Requerido>
+            <Fecha_de_pago>2023-15-22</Fecha_de_pago>
             <Abono>0.0</Abono>
             <Restante>0.0</Restante>
         </Pago>
 
         <Pago Id_Cliente="3" Id_Credito="2">
             <Pago_Requerido>0.0</Pago_Requerido>
+            <Fecha_de_pago>2023-15-22</Fecha_de_pago>
             <Abono>0.0</Abono>
             <Restante>0.0</Restante>
         </Pago>

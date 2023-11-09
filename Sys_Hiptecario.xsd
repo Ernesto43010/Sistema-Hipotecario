@@ -121,6 +121,7 @@
                             <xsd:complexType>
                                 <xsd:sequence>
                                     <xsd:element name = "Pago_Requerido" type = "xsd:float" />
+                                    <xsd:element name = "Fecha_de_pago" type = "xsd:date" />
                                     <xsd:element name = "Abono" type = "xsd:float" />
                                     <xsd:element name = "Restante" type = "xsd:float" />
                                 </xsd:sequence>
