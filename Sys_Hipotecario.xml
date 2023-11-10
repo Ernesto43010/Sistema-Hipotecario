@@ -17,6 +17,8 @@
             </Direccion>
             <Salario>50000</Salario>
             <Total_A_Pagar>0.0</Total_A_Pagar>
+            <Agente_Inmobiliario_Asociado>0</Agente_Inmobiliario_Asociado>
+            <Fecha_de_Nacimiento>2003-04-02</Fecha_de_Nacimiento>
         </Cliente>
 
         <Cliente Id_Cliente="2">
@@ -33,6 +35,8 @@
             </Direccion>
             <Salario>45500</Salario>
             <Total_A_Pagar>0.0</Total_A_Pagar>
+            <Agente_Inmobiliario_Asociado>0</Agente_Inmobiliario_Asociado>
+            <Fecha_de_Nacimiento>2003-04-02</Fecha_de_Nacimiento>
         </Cliente>
 
         <Cliente Id_Cliente="3">
@@ -48,6 +52,8 @@
             </Direccion>
             <Salario>100000</Salario>
             <Total_A_Pagar>0.0</Total_A_Pagar>
+            <Agente_Inmobiliario_Asociado>0</Agente_Inmobiliario_Asociado>
+            <Fecha_de_Nacimiento>2003-04-02</Fecha_de_Nacimiento>
         </Cliente>
 
         <Cliente Id_Cliente="4">
@@ -64,6 +70,8 @@
             </Direccion>
             <Salario>35000</Salario>
             <Total_A_Pagar>0.0</Total_A_Pagar>
+            <Agente_Inmobiliario_Asociado>0</Agente_Inmobiliario_Asociado>
+            <Fecha_de_Nacimiento>2003-04-02</Fecha_de_Nacimiento>
         </Cliente>
 
     </Clientes>
@@ -104,82 +112,23 @@
 
     </Empleados>
 
-    <Propiedades>
-
-        <Propiedad Id_Propiedad="1">
-            <Precio>500000</Precio>
-            <Direccion>
-                <Calle>6</Calle>
-                <Numero_Exterior>63</Numero_Exterior>
-                <Numero_Interior>0</Numero_Interior>
-                <Colonia>Agua Azul</Colonia>
-                <Codigo_Postal>68945</Codigo_Postal>
-            </Direccion>
-        </Propiedad>
-
-        <Propiedad Id_Propiedad="2">
-            <Precio>750000</Precio>
-            <Direccion>
-                <Calle>12</Calle>
-                <Numero_Exterior>45</Numero_Exterior>
-                <Numero_Interior>3</Numero_Interior>
-                <Colonia>Los Pinos</Colonia>
-                <Codigo_Postal>72134</Codigo_Postal>
-            </Direccion>
-        </Propiedad>
-
-        <Propiedad Id_Propiedad="3">
-            <Precio>600000</Precio>
-            <Direccion>
-                <Calle>3</Calle>
-                <Numero_Exterior>21</Numero_Exterior>
-                <Numero_Interior>7</Numero_Interior>
-                <Colonia>San Juan</Colonia>
-                <Codigo_Postal>78501</Codigo_Postal>
-            </Direccion>
-        </Propiedad>
-        
-        <Propiedad Id_Propiedad="4">
-            <Precio>850000</Precio>
-            <Direccion>
-                <Calle>8</Calle>
-                <Numero_Exterior>72</Numero_Exterior>
-                <Numero_Interior>0</Numero_Interior>
-                <Colonia>Las Flores</Colonia>
-                <Codigo_Postal>64321</Codigo_Postal>
-            </Direccion>
-        </Propiedad>
-
-        <Propiedad Id_Propiedad="5">
-            <Precio>450000</Precio>
-            <Direccion>
-                <Calle>5</Calle>
-                <Numero_Exterior>14</Numero_Exterior>
-                <Numero_Interior>2</Numero_Interior>
-                <Colonia>El Bosque</Colonia>
-                <Codigo_Postal>70123</Codigo_Postal>
-            </Direccion>
-        </Propiedad>
-
-        <Propiedad Id_Propiedad="6">
-            <Precio>950000</Precio>
-            <Direccion>
-                <Calle>10</Calle>
-                <Numero_Exterior>30</Numero_Exterior>
-                <Numero_Interior>1</Numero_Interior>
-                <Colonia>Centro Histórico</Colonia>
-                <Codigo_Postal>60201</Codigo_Postal>
-            </Direccion>
-        </Propiedad>        
-
-    </Propiedades>
+    <Agente_Inmobiliario>
+        <Agente Id_Agente = "1" Id_Cliente = "1">
+            <Nombre>Juan</Nombre>
+            <Apellido_Paterno>Pérez</Apellido_Paterno>
+            <Apellido_Materno>García</Apellido_Materno>
+            <Edad>30</Edad>
+            <Calificacion>9</Calificacion>
+            <Numero_de_telefono>555-555-5555</Numero_de_telefono>
+            <Comision>10.00</Comision>
+        </Agente>
+    </Agente_Inmobiliario>
 
     <Creditos>
 
         <Credito Id_Credito="1" Id_Empleado="3" Id_Cliente="2">
             <Estado_Del_Credito>Al corriente</Estado_Del_Credito>
             <Dinero_Prestado>600000</Dinero_Prestado>
-            <Propiedad>5</Propiedad>
             <Pagos_Mensuales>0.0</Pagos_Mensuales>
             <Plazo_en_Meses>0</Plazo_en_Meses>
             <Interes_Anual>0.0</Interes_Anual>
@@ -190,7 +139,6 @@
         <Credito Id_Credito="2" Id_Empleado="1" Id_Cliente="3">
             <Estado_Del_Credito>Al corriente</Estado_Del_Credito>
             <Dinero_Prestado>1000000</Dinero_Prestado>
-            <Propiedad>6</Propiedad>
             <Pagos_Mensuales>0.0</Pagos_Mensuales>
             <Plazo_en_Meses>0</Plazo_en_Meses>
             <Interes_Anual>0.0</Interes_Anual>

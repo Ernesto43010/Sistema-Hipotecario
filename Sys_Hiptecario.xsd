@@ -28,7 +28,9 @@
                                         </xsd:complexType>
                                     </xsd:element>
                                     <xsd:element name = "Salario" type = "xsd:positiveInteger" />
-                                    <xsd:element name = "Total_A_Pagar" type = "xsd:float" /> <!-- Lo vamos a poner flotante por que puede que tenga centavos-->
+                                    <xsd:element name = "Total_A_Pagar" type = "xsd:float" />
+                                    <xsd:element name = "Agente_Inmobiliario_Asociado" type = "xsd:positiveInteger" />
+                                    <xsd:element name = "Fecha_de_Nacimiento" type = "xsd:date" /> 
                                 </xsd:sequence>
                             </xsd:complexType>
                         </xsd:element>
@@ -56,29 +58,25 @@
                 </xsd:complexType>
             </xsd:element>
 
-            <xsd:element name = "Propiedades">
+            <xsd:element name = "Agente_Inmobiliario">
                 <xsd:complexType>
                     <xsd:sequence>
-                        <xsd:element name = "Propiedad" maxOccurs="unbounded">
+                        <xsd:element name = "Agente" maxOccurs="unbounded">
                             <xsd:complexType>
                                 <xsd:sequence>
-                                    <xsd:element name = "Precio" type= "xsd:positiveInteger" />
-                                    <xsd:element name ="Direccion">
-                                        <xsd:complexType>
-                                            <xsd:sequence>
-                                                <xsd:element name = "Calle" type="xsd:string" />
-                                                <xsd:element name = "Numero_Exterior" type = "xsd:positiveInteger"/>
-                                                <xsd:element name = "Numero_Interior" type = "xsd:positiveInteger"/>
-                                                <xsd:element name = "Colonia" type = "xsd:string" />
-                                                <xsd:element name = "Codigo_Postal" type = "xsd:string" />
-                                            </xsd:sequence>
-                                        </xsd:complexType>
-                                    </xsd:element>
+                                    <xsd:element name = "Nombre" type="xsd:string"/>
+                                    <xsd:element name = "Apellido_Paterno" type="xsd:string"/>
+                                    <xsd:element name = "Apellido_Materno" type="xsd:string"/>
+                                    <xsd:element name = "Edad" type= "xsd:positiveInteger" />
+                                    <xsd:element name = "Calificacion" type = "xsd:integer" minOccurs="1" maxOccurs="10" />
+                                    <xsd:element name = "Numero_de_telefono" type = "xsd:positiveInteger"/>
+                                    <xsd:element name = "Comision" type = "xsd:positiveInteger" />
                                 </xsd:sequence>
                             </xsd:complexType>
                         </xsd:element>
                     </xsd:sequence>
-                    <xsd:attribute name = "Id_Propiedad" type = "xsd:positiveInteger" use="required"/>
+                    <xsd:attribute name = "Id_Agente" type = "xsd:positiveInteger" use="required"/>
+                    <xsd:attribute name = "Id_Cliente" type = "xsd:positiveInteger" use="required" />
                 </xsd:complexType>
             </xsd:element>
 
@@ -98,12 +96,12 @@
                                         </xsd:simpleType>
                                     </xsd:element>
                                 <xsd:element name = "Dinero_Prestado" type = "xsd:positiveInteger" />
-                                <xsd:element name = "Propiedad" type = "xsd:positiveInteger" />
                                 <xsd:element name = "Pagos_Mensuales" type = "xsd:float" />
                                 <xsd:element name = "Plazo_en_Meses" type = "xsd:positiveInteger" />
                                 <xsd:element name = "Interes_Anual" type = "xsd:float" />
                                 <xsd:element name = "Fecha_Incio" type = "xsd:date" />
                                 <xsd:element name = "Fecha_Aproximada_Pago_Final" type = "xsd:date" />
+                                <xsd:element name = "Total_a_pagar" type = "xsd:float" />
                                 </xsd:sequence>
                             </xsd:complexType>
                         </xsd:element>
